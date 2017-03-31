@@ -24,3 +24,21 @@ add_executable(factory_method_01
 add_executable(factory_method_02
 	creational/factory_method/example2.cc
 )
+
+# Prototype
+add_executable(prototype_01
+	creational/prototype/example1.cc
+)
+
+add_executable(prototype_02
+	creational/prototype/example2.cc
+)
+
+# Prototype
+add_executable(singleton_01
+	creational/singleton/example1.cc
+)
+
+add_executable(singleton_02
+	creational/singleton/example2.cc
+)
