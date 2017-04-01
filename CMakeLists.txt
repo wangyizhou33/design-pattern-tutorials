@@ -1,6 +1,8 @@
 # CMake entry point
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required (VERSION 3.5)
 project (Tutorials)
+
+add_compile_options(-std=c++14)
 
 # Abstract factory
 add_executable(abstract_factory_01
@@ -41,4 +43,36 @@ add_executable(singleton_01
 
 add_executable(singleton_02
 	creational/singleton/example2.cc
+)
+
+# Adaptor
+add_executable(adaptor_01
+	structural/adaptor/example1.cc
+)
+
+add_executable(adaptor_02
+	structural/adaptor/example2.cc
+)
+
+# Bridge
+add_executable(bridge
+	structural/bridge/example.cc
+)
+
+# Composite
+add_executable(composite_01
+	structural/composite/example1.cc
+)
+
+add_executable(composite_02
+	structural/composite/example2.cc
+)
+
+# Decorator
+add_executable(decorator_01
+	structural/decorator/example1.cc
+)
+
+add_executable(decorator_02
+	structural/decorator/example2.cc
 )
