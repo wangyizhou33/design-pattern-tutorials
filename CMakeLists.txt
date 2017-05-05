@@ -2,7 +2,7 @@
 cmake_minimum_required (VERSION 3.5)
 project (Tutorials)
 
-add_compile_options(-std=c++14)
+add_compile_options(-std=c++11)
 
 # Abstract factory
 add_executable(abstract_factory_01
@@ -46,12 +46,12 @@ add_executable(singleton_02
 )
 
 # Adaptor
-add_executable(adaptor_01
-	structural/adaptor/example1.cc
+add_executable(adaptor
+	structural/adaptor/adaptor.cc
 )
 
-add_executable(adaptor_02
-	structural/adaptor/example2.cc
+add_executable(wrapper
+	structural/adaptor/wrapper.cc
 )
 
 # Bridge
